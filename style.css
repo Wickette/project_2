@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: rgb(26, 26, 26);
+  --text-color: white;
+  --header-color: rgba(131, 0, 0, 0.6);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  text-align: center;
+  color: var(--header-color);
+  margin: 0;
+  padding: 25px;
+  font-size: 40px;
+}
+
+header p {
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 75px 0px;
+  color: var(--text-color);
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+}
+
+.code-card {
+  height: 53vh;
+  position: relative;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: var(--text-color);
+  padding: 30px;
+  margin: 15px;
+}
+
+.card-header {
+  padding: 10px;
+  color: var(--header-color);
+  border: white 2px solid;
+  border-radius: 5px;
+  margin-top: -50px;
+  background: var(--background-color);
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.code-card > p {
+  color: var(--text-color);
+  padding: 10px;
+}
+
+.code {
+  user-select: all;
+  height: 35vh;
+  padding: 10px;
+  color: var(--text-color);
+  border-radius: 5px;
+  font-family: monospace;
+  line-height: 1.5;
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0.6) 25%,
+    rgba(131, 0, 0, 0.6) 75%
+  );
+}
+
+.code-card p {
+  margin: 0px;
+  background: none;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px 8px rgba(78, 2, 2, 0.6),
+    0px 0px 8px 8px rgba(224, 11, 11, 0.8);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

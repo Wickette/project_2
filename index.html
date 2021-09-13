@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>
+        <em>~ A permanent home for any CSS styling tips/tricks to revert back to
+          when needed ~</em>
+      </p>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section class="code-card">
+          <header class="card-header">Flexbox Row</header>
+          <p>Use these three properties to create a Flexbox row layout.</p>
+            <div class="code">
+              <p>.row {</p>
+              <p style="margin-left: 25px">display:flex;</p>
+              <p style="margin-left: 25px">flex-direction: row;</p>
+              <p style="margin-left: 25px">flex-wrap: wrap;</p>
+              <p>}</p>
+            </div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">Flexbox Column</header>
+          <p>Use this to create a Flexbox column layout.</p>
+          <div class="code">
+            <p>.column {</p>
+            <p style="margin-left: 25px">display: flex;</p>
+            <p style="margin-left: 25px">flex-direction: column;</p>
+            <p>}</p>
+          </div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">CSS Grid Layout</header>
+          <p>Build a 12-column layouy using CSS Grid.</p>
+          <div class="code">
+            <p>.grid {</p>
+            <p style="margin-left: 25px">display: grid;</p>
+            <p style="margin-left: 25px">width: 100%;</p>
+            <p style="margin-left: 25px">
+              grid-template-columns: repeat(12, 1fr);
+            </p>
+            <p>}</p>
+            <br />
+            <p>*also use grid-template-rows:</p>
+          </div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">Linear Gradients</header>
+          <p>
+            This will create a background linear gradient from top to bottom.
+          </p>
+          <div class="code">
+            <p>.linear-gradient-background {</p>
+            <p style="margin-left: 25px">background-image: linear-gradient (</p>
+            <p style="margin-left: 45px">rgba(232, 102, 236, 0.3) 0%,</p>
+            <p style="margin-left: 45px">rgba(232, 102, 236, 0.6) 100%</p>
+            <p style="margin-left: 25px">);</p>
+            <p>}</p>
+          </div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">Box Transition Glow</header>
+          <p>Use transition and box shadows to glow on hover</p>
+          <div class="code">
+            <p>.code-card .card-header {</p>
+            <p style="margin-left: 25px">border-radius: 8px;</p>
+            <p style="margin-left: 25px">transition: all 0.5s ease-in-out;</p>
+            <p>}</p>
+            <br />
+            <p></p>
+            <p></p>
+            <p style="margin-left: 25px">;</p>
+            <p></p>
+            <p></p>
+          </div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">Overlay Card with Title</header>
+          <p></p>
+          <div class="code"></div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">"placeholder"</header>
+          <p></p>
+          <div class="code"></div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">"placeholder"</header>
+          <p></p>
+          <div class="code"></div>
+        </section>
+
+        <section class="code-card">
+          <header class="card-header">"placeholder"</header>
+          <p></p>
+          <div class="code"></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>Made with future you in mind!</p>
+    </footer>
+  </body>
+</html>
